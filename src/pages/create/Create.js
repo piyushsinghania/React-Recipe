@@ -33,6 +33,7 @@ export default function Create() {
     postData({ title, method, ingredients, cookingTime: cookingTime + ' minutes' })
   }
 
+  // Redirect the user when we get the response
   useEffect(() => {
     if (!data) return;
     history.push("/")

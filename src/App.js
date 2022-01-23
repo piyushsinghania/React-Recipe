@@ -9,10 +9,14 @@ import Home from './pages/home/Home';
 import Search from './pages/search/Search';
 import Recipe from './pages/recipe/Recipe';
 
+// Components
+import Navbar from './components/Navbar';
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
+        <Navbar />
         <Switch>
           <Route exact path="/">
             <Home />

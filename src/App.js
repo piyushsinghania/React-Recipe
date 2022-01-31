@@ -8,6 +8,7 @@ import Create from './pages/create/Create';
 import Home from './pages/home/Home';
 import Search from './pages/search/Search';
 import Recipe from './pages/recipe/Recipe';
+import ThemeColor from './components/ThemeColor';
 
 // Components
 import Navbar from './components/Navbar';
@@ -17,6 +18,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
+        <ThemeColor />
         <Switch>
           <Route exact path="/">
             <Home />
